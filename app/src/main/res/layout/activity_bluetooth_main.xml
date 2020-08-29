@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BluetoothMain"
+    android:orientation="vertical"
+    android:background="#192037"
+    >
+
+    <Button
+        android:clickable="true"
+        android:text="Enable Discoverable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:background="@drawable/button_drawable"
+        android:padding="20sp"
+
+        android:textSize="15sp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:text="Discover"
+        android:clickable="true"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:background="@drawable/button_drawable"
+        android:textSize="15sp"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:padding="20sp"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="On/Off"
+        android:clickable="true"        android:layout_marginTop="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_drawable"
+        android:textSize="22sp"
+        android:id="@+id/button"
+        android:padding="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/lvNewDevices"
+        android:layout_marginTop="76dp"
+        android:layout_below="@+id/button4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Recieve"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/button_drawable"
+        android:textSize="22sp"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button2"
+        android:padding="20sp"
+
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
+
+</RelativeLayout>

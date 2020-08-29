@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Realtime Log"
+        android:textColor="#7FFF00"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="This log is direct connection from RaspberryPi and Cloud"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:id="@+id/console"
+        android:layout_width="350dp"
+        android:layout_height="320dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:text="long log .."
+        android:background="#404040"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        />
+    <Button
+        android:id="@+id/btn_reqconn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="40dp"
+        android:text="End Connection !"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/background"
+        android:layout_marginRight="20dp" />
+
+</LinearLayout>
